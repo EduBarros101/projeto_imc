@@ -98,7 +98,7 @@ form input::placeholder {
   margin-top: 1.6rem;
 }
 
-button {
+form button {
   display: flex;
   gap: 0.8rem;
   align-items: center;
@@ -122,6 +122,73 @@ button {
   transition: background 0.15s;
 }
 
-button:hover {
+form button:hover {
   background-color: var(--bg-button-hover);
+}
+
+/* modal */
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-wrapper {
+  visibility: hidden;
+  opacity: 0;
+
+  display: grid;
+  place-content: center;
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  position: relative;
+}
+
+.modal button {
+  background: none;
+  border: none;
+
+  position: absolute;
+
+  top: 1.6rem;
+  right: 1.6rem;
+
+  cursor: pointer;
+
+  transition: transform 0.15s;
+}
+
+.modal button:hover {
+  transform: scale(1.2);
+}
+
+/* alert error */
+.alert-error.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.alert-error {
+  position: absolute;
+  background: var(--bg-error);
+
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--tt-error);
+  padding: 0.8rem 0;
+  font-weight: bold;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transform: translateY(-30px);
+  transition: 0.5s;
 }
