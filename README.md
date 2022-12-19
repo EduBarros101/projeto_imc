@@ -8,4 +8,4 @@ Aplicativo para Cálculo do IMC desenvolvido no nível 05 do programa Explorer.
 
 ## Link para o projeto no ar
 
-🔗 link:
+🔗 link: https://edubarros101.github.io/projeto_imc/
